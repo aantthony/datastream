@@ -28,6 +28,7 @@
     "coveralls": "~2.5.0"
   },
   "dependencies": {
-    "colors": "~0.6.2"
+    "colors": "~0.6.2",
+    "JSONStream": "~0.7.1"
   }
 }
