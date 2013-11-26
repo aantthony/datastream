@@ -5,7 +5,7 @@ Usage
 ```js
 var encoder = new DataStream.Encoder();
 var output = fs.createWriteStream('/file.jsons.gz');
-decoder.pipe(zlip.createGzip()).pipe(output);
+encoder.pipe(zlib.createGzip()).pipe(output);
 
 encoder.write({x:3});
 encoder.write({x:4});
@@ -19,7 +19,7 @@ encoder.on('finish', function () {
 Reading:
 ```js
 var decoder = new DataStream.Decoder();
-var input = fs.createReadStream('/file.jsons.gz').pipe(zip.createGunzip());
+var input = fs.createReadStream('/file.jsons.gz').pipe(zlib.createGunzip());
 input.pipe(decoder);
 decoder
 .on('data', function (err, data) {
