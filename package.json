@@ -26,9 +26,5 @@
     "mocha-lcov-reporter": "0.0.1",
     "jscoverage": "~0.3.8",
     "coveralls": "~2.5.0"
-  },
-  "dependencies": {
-    "colors": "~0.6.2",
-    "JSONStream": "~0.7.1"
   }
 }
